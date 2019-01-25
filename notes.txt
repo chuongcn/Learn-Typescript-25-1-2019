@@ -1,0 +1,9 @@
+
+-- Cách chạy 1 file typescript trong visual studio code --
+
+node -v
+npm install -g typescript
+tsc --init
+ctrl+shift+P >Configuration Task>typescript task.json
+Cấu hình lại tsconfig.json :   "sourceMap": true, "outDir": "dist/"
+Rồi chạy 1.ts > save > crel+shift+B -> file js sẽ tạo trong dist
